@@ -1,3 +1,7 @@
+.c, .ruby, .css {
+  display: none;
+}
+
 .container {
   background-color: lightgrey;
   border: solid black 3px;
