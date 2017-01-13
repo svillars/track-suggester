@@ -1,7 +1,7 @@
 $("document").ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $(".button2").show();
+    $(".button2").fadeIn();
     $(".main, .col-md-4, .button1").hide();
     $(".c").hide();
     $(".ruby").hide();
@@ -36,17 +36,17 @@ $("document").ready(function() {
     }
 
     if (question2 === 1 && question6 === 1) {
-      $(".css").show();
+      $(".css").fadeIn();
     } else if (ones > twos) {
-      $(".ruby").show();
+      $(".ruby").fadeIn();
     } else {
-      $(".c").show();
+      $(".c").fadeIn();
     }
   });
 
   $(".btn").click(function() {
     $(".button2").hide();
-    $(".main, .col-md-4, .button1").show();
+    $(".main, .col-md-4, .button1").fadeIn();
     $(".c").hide();
     $(".ruby").hide();
     $(".css").hide();
