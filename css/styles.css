@@ -6,3 +6,8 @@
 .col-md-4 {
   text-align: center;
 }
+
+.button div {
+  text-align: center;
+  margin-top: 3%;
+}
