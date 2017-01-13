@@ -1,7 +1,8 @@
 $("document").ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $(".main, .col-md-4, button").hide();
+    $(".button2").show();
+    $(".main, .col-md-4, .button1").hide();
     $(".c").hide();
     $(".ruby").hide();
     $(".css").hide();
@@ -41,5 +42,13 @@ $("document").ready(function() {
     } else {
       $(".c").show();
     }
+  });
+
+  $(".btn").click(function() {
+    $(".button2").hide();
+    $(".main, .col-md-4, .button1").show();
+    $(".c").hide();
+    $(".ruby").hide();
+    $(".css").hide();
   })
 })
